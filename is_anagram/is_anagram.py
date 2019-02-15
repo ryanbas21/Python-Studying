@@ -1,6 +1,6 @@
 def is_anagram (str1, str2):
-    str1 = "".join(str1.split())
-    str2 = "".join(str2.split())
+    str1 = str1.replace(" ", '')
+    str2 = str2.replace(" ", '')
     letters = {}
 
     if not isString(str1) and isString(str2):
