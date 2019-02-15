@@ -19,3 +19,16 @@ class Stack:
     def isEmpty(self):
 
         return len(self.stack) == 0
+
+
+def revString(str):
+    x = Stack()
+    newStr = ''
+
+    for letter in str:
+        x.push(letter)
+
+    while x.size() != 0:
+        newStr += x.pop()
+
+    return newStr
